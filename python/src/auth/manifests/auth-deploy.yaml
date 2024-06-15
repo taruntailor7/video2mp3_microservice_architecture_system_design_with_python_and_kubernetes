@@ -23,8 +23,8 @@ spec:
           image: taruntailor7/auth
           ports:
             - containerPort: 5000
-          envForm:
+          envFrom:
             - configMapRef:
-              name: auth-configmap
+                name: auth-configmap
             - secretRef:
-              name: auth-secret
+                name: auth-secret
