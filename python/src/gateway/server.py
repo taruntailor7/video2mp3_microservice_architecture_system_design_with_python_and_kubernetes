@@ -1,4 +1,4 @@
-import os, gridfs, pika, json
+import os, gridfs, pika, json # type: ignore
 from flask import Flask, request
 from flask_pymongo import  PyMongo 
 from auth import validate
